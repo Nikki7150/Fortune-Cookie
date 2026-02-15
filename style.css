@@ -1,0 +1,91 @@
+html {
+    background-color: #b4a3c8;
+    background-image: url("assets/plate.png");
+    background-size: 70%;
+    background-position: 50% 5vh;
+    background-repeat: no-repeat;
+}
+
+.cookie {
+    width: 14%;
+    transform: translate(-50%, -50%);
+    /*box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);*/
+    cursor: pointer;
+}
+
+#c1 {
+    position: absolute;
+    top: 47%;
+    left: 58%;
+}
+
+#c2 {
+    width: 16%;
+    position: absolute;
+    top: 57%;
+    left: 41%;
+}
+
+#c3 {
+    width: 17%;
+    position: absolute;
+    top: 30%;
+    left: 49%;
+}
+
+#c4 {
+    position: absolute;
+    top: 76%;
+    left: 52%;
+}
+
+.zoomed {
+    position: fixed !important;
+    top: 40% !important;
+    left: 50% !important;
+    width: 20% !important;
+    transform: translate(-50%, -50%) !important;
+    transition: all 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+#zoom-cookie {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    height: 47%;   /* fixed height instead */
+    width: auto;     /* keep proportions */
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    cursor: pointer;
+}
+
+
+@keyframes shake {
+  0%   { transform: translate(-50%, -50%) translate(0px, 0px) rotate(0deg); }
+  20%  { transform: translate(-50%, -50%) translate(-3px, 2px) rotate(-1deg); }
+  40%  { transform: translate(-50%, -50%) translate(3px, -2px) rotate(1deg); }
+  60%  { transform: translate(-50%, -50%) translate(-2px, 1px) rotate(0deg); }
+  80%  { transform: translate(-50%, -50%) translate(2px, -1px) rotate(1deg); }
+  100% { transform: translate(-50%, -50%) translate(0px, 0px) rotate(0deg); }
+}
+
+
+.shake {
+  animation: shake 0.3s ease;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    padding: 5px;
+    width: 540px;
+    height: 80px;
+    z-index: 1001;
+}
