@@ -11,13 +11,29 @@ html {
     transform: translate(-50%, -50%);
     /*box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);*/
     cursor: pointer;
+    
+}
+
+#click-text {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 20%;
 }
 
 #c1 {
     position: absolute;
     top: 47%;
     left: 58%;
+    clip-path: polygon(
+    1% .5%,
+    100% 1%,
+    100% 100%,
+    1% 100%
+  )
 }
+
 
 #c2 {
     width: 16%;
@@ -88,4 +104,12 @@ p {
     width: 540px;
     height: 80px;
     z-index: 1001;
+}
+
+#click-open {
+    position: absolute;
+    bottom: 2%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 10%;
 }
